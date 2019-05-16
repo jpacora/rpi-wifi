@@ -76,7 +76,7 @@ MAC_ADDRESS="$(cat /sys/class/net/wlan0/address)"
 # Install dependencies
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install dnsmasq dhcpcd hostapd
+sudo apt -y install dnsmasq dhcpcd5 hostapd
 
 # Populate `/etc/udev/rules.d/70-persistent-net.rules`
 sudo bash -c 'cat > /etc/udev/rules.d/70-persistent-net.rules' << EOF
